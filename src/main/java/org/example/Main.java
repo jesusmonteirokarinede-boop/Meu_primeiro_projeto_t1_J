@@ -1,16 +1,18 @@
+import java.util.Locale;
 import java.util.Scanner;
 
-class Questao1 {
+
+class Questao2 {
     public static void main(String[] args) {
-        try (Scanner ent = new Scanner(System.in)) {
+        try (Scanner ent = new Scanner(System.in).useLocale(Locale.US)) {
 
-            System.out.print("Informe a sua idade: ");
-            int idade = ent.nextInt();
+            System.out.print("Informe a sua nota: ");
+            double nota = ent.nextDouble();
 
-            if (idade < 18) {
-                System.out.println("Menor de idade, você possui " + idade + " anos.");
+            if (nota >= 7) {
+                System.out.println("Aprovado");
             } else {
-                System.out.println("Maior de idade, você possui " + idade + " anos.");
+                System.out.println("Reprovado");
             }
         }
     }
