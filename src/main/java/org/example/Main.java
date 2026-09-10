@@ -30,7 +30,7 @@ class Questao4 {
                 System.out.println("Domingo");
                 break;
             default:
-                System.out.println("Inexistente");
+                System.out.println("Inexistente!");
         }
 
         ent.close();
