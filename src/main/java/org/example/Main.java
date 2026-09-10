@@ -1,38 +1,42 @@
+package org.example;
 import java.util.Scanner;
 
-class questão4 {
+// Exercicios de estrutura de decisão
+// Questão 4 - Dia da semana
+public class Main {
     public static void main(String[] args) {
-        Scanner ent = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+        int dia;
+        System.out.println("Digite um número entre 1 e 7: ");
+        dia = entrada.nextInt();
 
-        System.out.print("Informe o dia da semana (1 a 7): ");
-        int dia = ent.nextInt();
 
         switch (dia) {
             case 1:
-                System.out.println("Segunda-feira");
-                break;
-            case 2:
-                System.out.println("Terça-feira");
-                break;
-            case 3:
-                System.out.println("Quarta-feira");
-                break;
-            case 4:
-                System.out.println("Quinta-feira");
-                break;
-            case 5:
-                System.out.println("Sexta-feira");
-                break;
-            case 6:
-                System.out.println("Sábado");
-                break;
-            case 7:
                 System.out.println("Domingo");
                 break;
+            case 2:
+                System.out.println("Segunda");
+                break;
+            case 3:
+                System.out.println("Terça");
+                break;
+            case 4:
+                System.out.println("Quarta");
+                break;
+            case 5:
+                System.out.println("Quinta");
+                break;
+            case 6:
+                System.out.println("Sexta");
+                break;
+            case 7:
+                System.out.println("Sábado");
+                break;
             default:
-                System.out.println("Inexistente!!");
+                System.out.println("Valor inválido");
+
         }
 
-        ent.close();
     }
 }
